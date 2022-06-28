@@ -27,6 +27,8 @@ namespace API.Services
         {
             var uploadResult = new ImageUploadResult();
 
+            // need check if file is empty.
+
             if (file.Length > 0)
             {
                 using var stream = file.OpenReadStream();
